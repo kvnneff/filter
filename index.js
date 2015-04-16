@@ -18,9 +18,9 @@ module.exports = function(el, fn, class){
   for (var i = 0; i < el.children.length; ++i) {
     var child = el.children[i];
     if (fn(child, i)) {
-      classes(child).remove('hide');
+      classes(child).remove(class);
     } else {
-      classes(child).add('hide');
+      classes(child).add(class);
     }
   }
 };
