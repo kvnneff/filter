@@ -13,14 +13,14 @@ var classes = require('classes');
  * @api public
  */
 
-module.exports = function(el, fn, class){
-  class = class || 'hide';
+module.exports = function(el, fn, className){
+  className = className || 'hide';
   for (var i = 0; i < el.children.length; ++i) {
     var child = el.children[i];
     if (fn(child, i)) {
-      classes(child).remove(class);
+      classes(child).remove(className);
     } else {
-      classes(child).add(class);
+      classes(child).add(className);
     }
   }
 };
