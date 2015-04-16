@@ -13,7 +13,8 @@ var classes = require('classes');
  * @api public
  */
 
-module.exports = function(el, fn){
+module.exports = function(el, fn, class){
+  class = class || 'hide';
   for (var i = 0; i < el.children.length; ++i) {
     var child = el.children[i];
     if (fn(child, i)) {
