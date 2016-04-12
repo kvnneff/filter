@@ -3,7 +3,7 @@
  * Module dependencies.
  */
 
-var classes = require('classes');
+var classes = require('classes-component');
 
 /**
  * Filter `el`'s children with the given `fn(el, i)`.
